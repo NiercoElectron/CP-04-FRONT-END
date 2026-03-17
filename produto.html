@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vestido Terra | VerdeEssência</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="index.html">
+        <i class="bi bi-flower1 me-2"></i>VerdeEssência
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+        <a href="#" class="btn btn-verde ms-lg-3">
+          <i class="bi bi-cart3 me-1"></i>Carrinho
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <section class="bg-areia py-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="categorias.html">Categorias</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Vestido Terra</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Detalhes do Produto -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Imagens -->
+        <div class="col-lg-6">
+          <img
+            id="imgPrincipal"
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+            alt="Vestido Terra"
+            class="produto-detalhe-img shadow mb-3"
+          />
+          <div class="d-flex gap-2">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=200&q=80" alt="Vestido Terra 1" class="produto-thumb active" />
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=200&q=80" alt="Vestido Terra 2" class="produto-thumb" />
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=200&q=80" alt="Vestido Terra 3" class="produto-thumb" />
+          </div>
+        </div>
+
+        <!-- Informações -->
+        <div class="col-lg-6">
+          <span class="badge badge-eco mb-2 px-3 py-2">Algodão Orgânico</span>
+          <h1 class="fw-bold mb-2">Vestido Terra</h1>
+          <p class="text-muted mb-3">Cód: VE-001 &bull; VerdeEssência</p>
+
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-fill text-warning"></i>
+            <i class="bi bi-star-half text-warning"></i>
+            <span class="text-muted ms-1">(47 avaliações)</span>
+          </div>
+
+          <h2 class="fw-bold text-success mb-1">R$ 189,90</h2>
+          <p class="text-muted mb-4">ou 3x de R$ 63,30 sem juros</p>
+
+          <hr />
+
+          <p class="mb-4">
+            O Vestido Terra é feito com 100% algodão orgânico certificado, proporcionando
+            conforto e leveza para o dia a dia. Seu design atemporal combina simplicidade
+            com elegância, perfeito para quem busca consciência e estilo. Produzido de forma
+            ética, com respeito aos trabalhadores e ao meio ambiente.
+          </p>
+
+          <!-- Tamanho -->
+          <div class="mb-3">
+            <label class="fw-bold mb-2 d-block">Tamanho</label>
+            <div class="btn-group" role="group">
+              <input type="radio" class="btn-check" name="tamanho" id="tamP" />
+              <label class="btn btn-outline-secondary" for="tamP">P</label>
+              <input type="radio" class="btn-check" name="tamanho" id="tamM" checked />
+              <label class="btn btn-outline-secondary" for="tamM">M</label>
+              <input type="radio" class="btn-check" name="tamanho" id="tamG" />
+              <label class="btn btn-outline-secondary" for="tamG">G</label>
+              <input type="radio" class="btn-check" name="tamanho" id="tamGG" />
+              <label class="btn btn-outline-secondary" for="tamGG">GG</label>
+            </div>
+          </div>
+
+          <!-- Quantidade -->
+          <div class="mb-4">
+            <label class="fw-bold mb-2 d-block">Quantidade</label>
+            <div class="input-group" style="max-width: 150px;">
+              <button class="btn btn-outline-secondary" type="button">-</button>
+              <input type="number" class="form-control text-center" value="1" min="1" />
+              <button class="btn btn-outline-secondary" type="button">+</button>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row gap-3">
+            <button class="btn btn-verde btn-lg flex-grow-1">
+              <i class="bi bi-cart-plus me-2"></i>Adicionar ao Carrinho
+            </button>
+            <button class="btn btn-outline-verde btn-lg">
+              <i class="bi bi-heart me-1"></i>Favoritar
+            </button>
+          </div>
+
+          <hr />
+
+          <!-- Informações extras -->
+          <div class="row g-3 mt-1">
+            <div class="col-sm-4 text-center">
+              <i class="bi bi-truck fs-4 text-success"></i>
+              <p class="mb-0 small mt-1">Frete grátis acima de R$ 200</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <i class="bi bi-arrow-repeat fs-4 text-success"></i>
+              <p class="mb-0 small mt-1">Troca em até 30 dias</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <i class="bi bi-shield-check fs-4 text-success"></i>
+              <p class="mb-0 small mt-1">Compra segura</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Descrição e detalhes -->
+  <section class="py-5 bg-areia">
+    <div class="container">
+      <ul class="nav nav-tabs mb-4" id="produtoTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#descricao" type="button" role="tab">Descrição</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="detalhes-tab" data-bs-toggle="tab" data-bs-target="#detalhes" type="button" role="tab">Detalhes</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="aval-tab" data-bs-toggle="tab" data-bs-target="#avaliacoes" type="button" role="tab">Avaliações</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="produtoTabContent">
+        <div class="tab-pane fade show active" id="descricao" role="tabpanel">
+          <p>O Vestido Terra traz a essência da moda sustentável: feito com algodão orgânico certificado GOTS, sem uso de agrotóxicos ou químicos nocivos. O tingimento é feito com corantes naturais à base de plantas, garantindo cores vibrantes sem poluir os rios.</p>
+          <p>Com modelagem solta e confortável, é perfeito para passeios, trabalho e ocasiões casuais. Uma peça versátil que não sai de moda.</p>
+        </div>
+        <div class="tab-pane fade" id="detalhes" role="tabpanel">
+          <table class="table">
+            <tbody>
+              <tr><th>Material</th><td>100% Algodão Orgânico</td></tr>
+              <tr><th>Certificação</th><td>GOTS (Global Organic Textile Standard)</td></tr>
+              <tr><th>Tingimento</th><td>Corantes naturais</td></tr>
+              <tr><th>Fabricação</th><td>Brasil - Produção ética</td></tr>
+              <tr><th>Cuidados</th><td>Lavar à mão ou máquina (ciclo delicado)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tab-pane fade" id="avaliacoes" role="tabpanel">
+          <div class="mb-4 p-3 bg-white rounded-4 shadow-sm">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <strong>Mariana S.</strong>
+              <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+            </div>
+            <p class="mb-0">Vestido lindo e super confortável! O tecido é muito gostoso e a cor não desbotou. Amei!</p>
+          </div>
+          <div class="mb-4 p-3 bg-white rounded-4 shadow-sm">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <strong>Fernanda L.</strong>
+              <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+            </div>
+            <p class="mb-0">Ótima qualidade! Só achei que ficou um pouquinho grande, mas nada que atrapalhe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos relacionados -->
+  <section class="py-5">
+    <div class="container">
+      <h3 class="section-title mb-4">Você também pode gostar</h3>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card produto-card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Camisa Brisa" />
+            <div class="card-body">
+              <span class="badge badge-eco mb-2">Tecido Reciclado</span>
+              <h5 class="card-title">Camisa Brisa</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <strong>R$ 149,90</strong>
+                <a href="produto.html" class="btn btn-sm btn-verde">Ver</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card produto-card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Bolsa Raiz" />
+            <div class="card-body">
+              <span class="badge badge-eco mb-2">Vegano</span>
+              <h5 class="card-title">Bolsa Raiz</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <strong>R$ 219,90</strong>
+                <a href="produto.html" class="btn btn-sm btn-verde">Ver</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card produto-card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Óculos Aurora" />
+            <div class="card-body">
+              <span class="badge badge-eco mb-2">Eco Design</span>
+              <h5 class="card-title">Óculos Aurora</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <strong>R$ 129,90</strong>
+                <a href="produto.html" class="btn btn-sm btn-verde">Ver</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card produto-card h-100 shadow-sm border-0">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Camiseta Raiz" />
+            <div class="card-body">
+              <span class="badge badge-eco mb-2">Algodão Orgânico</span>
+              <h5 class="card-title">Camiseta Raiz</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <strong>R$ 89,90</strong>
+                <a href="produto.html" class="btn btn-sm btn-verde">Ver</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="fw-bold"><i class="bi bi-flower1 me-2"></i>VerdeEssência</h5>
+          <p>Moda sustentável com propósito: roupas e acessórios ecológicos para quem quer se vestir bem e fazer escolhas mais conscientes.</p>
+          <div class="d-flex gap-3 fs-4">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-pinterest"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold">Loja</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="fw-bold">Institucional</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Termos de uso</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="fw-bold">Contato</h6>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-envelope me-2"></i>contato@verdeessencia.com</li>
+            <li><i class="bi bi-whatsapp me-2"></i>(11) 99999-9999</li>
+            <li><i class="bi bi-geo-alt me-2"></i>São Paulo - SP</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4" />
+      <div class="text-center">
+        <small>&copy; 2026 VerdeEssência. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

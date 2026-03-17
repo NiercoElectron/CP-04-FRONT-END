@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Categorias | VerdeEssência</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="index.html">
+        <i class="bi bi-flower1 me-2"></i>VerdeEssência
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="categorias.html">Categorias</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+        <a href="#" class="btn btn-verde ms-lg-3">
+          <i class="bi bi-cart3 me-1"></i>Carrinho
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <section class="bg-areia py-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Categorias</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Conteúdo principal -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+
+        <!-- Filtros laterais -->
+        <div class="col-lg-3">
+          <div class="filter-section p-4 border rounded-4 shadow-sm">
+            <h5 class="fw-bold mb-4"><i class="bi bi-funnel me-2"></i>Filtros</h5>
+
+            <!-- Tipo de produto -->
+            <h6 class="mt-3 mb-2">Tipo de Produto</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="filtroRoupas" checked />
+              <label class="form-check-label" for="filtroRoupas">Roupas</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="filtroBeleza" />
+              <label class="form-check-label" for="filtroBeleza">Beleza</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="filtroCasa" />
+              <label class="form-check-label" for="filtroCasa">Casa</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="filtroAcessorios" />
+              <label class="form-check-label" for="filtroAcessorios">Acessórios</label>
+            </div>
+
+            <hr />
+
+            <!-- Faixa de preço -->
+            <h6 class="mt-3 mb-2">Faixa de Preço</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="preco" id="precoTodos" checked />
+              <label class="form-check-label" for="precoTodos">Todos</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="preco" id="precoAte100" />
+              <label class="form-check-label" for="precoAte100">Até R$ 100</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="preco" id="preco100a200" />
+              <label class="form-check-label" for="preco100a200">R$ 100 – R$ 200</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="preco" id="precoAcima200" />
+              <label class="form-check-label" for="precoAcima200">Acima de R$ 200</label>
+            </div>
+
+            <hr />
+
+            <!-- Marca -->
+            <h6 class="mt-3 mb-2">Marca</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="marcaVE" checked />
+              <label class="form-check-label" for="marcaVE">VerdeEssência</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="marcaEcoLife" />
+              <label class="form-check-label" for="marcaEcoLife">EcoLife</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="marcaNatura" />
+              <label class="form-check-label" for="marcaNatura">NaturaBrasil</label>
+            </div>
+
+            <button class="btn btn-verde w-100 mt-4">Aplicar filtros</button>
+          </div>
+        </div>
+
+        <!-- Grid de produtos -->
+        <div class="col-lg-9">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="section-title mb-0">Todos os Produtos</h2>
+            <select class="form-select w-auto">
+              <option selected>Ordenar por</option>
+              <option>Menor preço</option>
+              <option>Maior preço</option>
+              <option>Mais recentes</option>
+            </select>
+          </div>
+
+          <div class="row g-4">
+            <!-- Produto 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card produto-card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Vestido Terra" />
+                <div class="card-body">
+                  <span class="badge badge-eco mb-2">Algodão Orgânico</span>
+                  <h5 class="card-title">Vestido Terra</h5>
+                  <p class="card-text text-muted">Leve, confortável e ideal para o dia a dia.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong>R$ 189,90</strong>
+                    <a href="#" class="btn btn-sm btn-verde"><i class="bi bi-cart-plus me-1"></i>Adicionar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card produto-card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Camisa Brisa" />
+                <div class="card-body">
+                  <span class="badge badge-eco mb-2">Tecido Reciclado</span>
+                  <h5 class="card-title">Camisa Brisa</h5>
+                  <p class="card-text text-muted">Elegância minimalista com baixo impacto ambiental.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong>R$ 149,90</strong>
+                    <a href="#" class="btn btn-sm btn-verde"><i class="bi bi-cart-plus me-1"></i>Adicionar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card produto-card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Bolsa Raiz" />
+                <div class="card-body">
+                  <span class="badge badge-eco mb-2">Vegano</span>
+                  <h5 class="card-title">Bolsa Raiz</h5>
+                  <p class="card-text text-muted">Acessório versátil produzido sem origem animal.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong>R$ 219,90</strong>
+                    <a href="#" class="btn btn-sm btn-verde"><i class="bi bi-cart-plus me-1"></i>Adicionar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card produto-card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Óculos Aurora" />
+                <div class="card-body">
+                  <span class="badge badge-eco mb-2">Eco Design</span>
+                  <h5 class="card-title">Óculos Aurora</h5>
+                  <p class="card-text text-muted">Design moderno com materiais de origem responsável.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong>R$ 129,90</strong>
+                    <a href="#" class="btn btn-sm btn-verde"><i class="bi bi-cart-plus me-1"></i>Adicionar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card produto-card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Saia Folha" />
+                <div class="card-body">
+                  <span class="badge badge-eco mb-2">Linho Natural</span>
+                  <h5 class="card-title">Saia Folha</h5>
+                  <p class="card-text text-muted">Saia midi em linho natural com caimento leve.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong>R$ 159,90</strong>
+                    <a href="#" class="btn btn-sm btn-verde"><i class="bi bi-cart-plus me-1"></i>Adicionar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card produto-card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Camiseta Raiz" />
+                <div class="card-body">
+                  <span class="badge badge-eco mb-2">Algodão Orgânico</span>
+                  <h5 class="card-title">Camiseta Raiz</h5>
+                  <p class="card-text text-muted">Básica, versátil e feita com algodão 100% orgânico.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <strong>R$ 89,90</strong>
+                    <a href="#" class="btn btn-sm btn-verde"><i class="bi bi-cart-plus me-1"></i>Adicionar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="fw-bold"><i class="bi bi-flower1 me-2"></i>VerdeEssência</h5>
+          <p>Moda sustentável com propósito: roupas e acessórios ecológicos para quem quer se vestir bem e fazer escolhas mais conscientes.</p>
+          <div class="d-flex gap-3 fs-4">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-pinterest"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold">Loja</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="fw-bold">Institucional</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Termos de uso</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="fw-bold">Contato</h6>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-envelope me-2"></i>contato@verdeessencia.com</li>
+            <li><i class="bi bi-whatsapp me-2"></i>(11) 99999-9999</li>
+            <li><i class="bi bi-geo-alt me-2"></i>São Paulo - SP</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4" />
+      <div class="text-center">
+        <small>&copy; 2026 VerdeEssência. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

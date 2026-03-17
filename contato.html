@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | VerdeEssência</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="index.html">
+        <i class="bi bi-flower1 me-2"></i>VerdeEssência
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="categorias.html">Categorias</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contato.html">Contato</a></li>
+        </ul>
+        <a href="#" class="btn btn-verde ms-lg-3">
+          <i class="bi bi-cart3 me-1"></i>Carrinho
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <section class="bg-areia py-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contato</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Formulário de contato -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Formulário -->
+        <div class="col-lg-7">
+          <h2 class="section-title mb-2">Fale Conosco</h2>
+          <p class="text-muted mb-4">Envie sua mensagem e responderemos o mais breve possível.</p>
+
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="nome" class="form-label fw-bold">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label fw-bold">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="seu@email.com" required />
+              </div>
+              <div class="col-12">
+                <label for="assunto" class="form-label fw-bold">Assunto</label>
+                <select class="form-select" id="assunto" required>
+                  <option value="" selected disabled>Selecione um assunto</option>
+                  <option value="duvida">Dúvida sobre produto</option>
+                  <option value="pedido">Acompanhar pedido</option>
+                  <option value="troca">Troca ou devolução</option>
+                  <option value="parceria">Parceria comercial</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="mensagem" class="form-label fw-bold">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-verde btn-lg">
+                  <i class="bi bi-send me-2"></i>Enviar Mensagem
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Informações de contato -->
+        <div class="col-lg-5">
+          <div class="p-4 bg-areia rounded-4 h-100">
+            <h4 class="fw-bold mb-4">Informações de Contato</h4>
+
+            <div class="d-flex align-items-start mb-4">
+              <i class="bi bi-geo-alt-fill fs-4 text-success me-3 mt-1"></i>
+              <div>
+                <h6 class="fw-bold mb-1">Endereço</h6>
+                <p class="text-muted mb-0">Av. Paulista, 1000 - Bela Vista<br>São Paulo - SP, 01310-100</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start mb-4">
+              <i class="bi bi-envelope-fill fs-4 text-success me-3 mt-1"></i>
+              <div>
+                <h6 class="fw-bold mb-1">E-mail</h6>
+                <p class="text-muted mb-0">contato@verdeessencia.com</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start mb-4">
+              <i class="bi bi-whatsapp fs-4 text-success me-3 mt-1"></i>
+              <div>
+                <h6 class="fw-bold mb-1">WhatsApp</h6>
+                <p class="text-muted mb-0">(11) 99999-9999</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start mb-4">
+              <i class="bi bi-clock-fill fs-4 text-success me-3 mt-1"></i>
+              <div>
+                <h6 class="fw-bold mb-1">Horário de Atendimento</h6>
+                <p class="text-muted mb-0">Seg - Sex: 9h às 18h<br>Sábado: 9h às 13h</p>
+              </div>
+            </div>
+
+            <hr />
+
+            <h6 class="fw-bold mb-3">Redes Sociais</h6>
+            <div class="d-flex gap-3 fs-4">
+              <a href="#" class="text-success"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-success"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-success"><i class="bi bi-pinterest"></i></a>
+              <a href="#" class="text-success"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  <section class="py-5 bg-areia">
+    <div class="container text-center">
+      <h3 class="section-title mb-4">Onde estamos</h3>
+      <div class="ratio ratio-21x9 rounded-4 overflow-hidden shadow">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976525768483!2d-46.65588822443!3d-23.56330106143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c0776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="fw-bold"><i class="bi bi-flower1 me-2"></i>VerdeEssência</h5>
+          <p>Moda sustentável com propósito: roupas e acessórios ecológicos para quem quer se vestir bem e fazer escolhas mais conscientes.</p>
+          <div class="d-flex gap-3 fs-4">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-pinterest"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold">Loja</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="fw-bold">Institucional</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Termos de uso</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="fw-bold">Contato</h6>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-envelope me-2"></i>contato@verdeessencia.com</li>
+            <li><i class="bi bi-whatsapp me-2"></i>(11) 99999-9999</li>
+            <li><i class="bi bi-geo-alt me-2"></i>São Paulo - SP</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary my-4" />
+      <div class="text-center">
+        <small>&copy; 2026 VerdeEssência. Todos os direitos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

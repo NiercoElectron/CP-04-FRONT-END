@@ -1,0 +1,205 @@
+:root {
+  --verde-principal: #2f6b4f;
+  --verde-claro: #eaf5ee;
+  --areia: #f7f3eb;
+  --marrom: #6f5c4b;
+  --texto: #243126;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--texto);
+  background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+/* Botões */
+.btn-verde {
+  background-color: var(--verde-principal);
+  border: none;
+  color: white;
+}
+
+.btn-verde:hover {
+  background-color: #25563f;
+  color: white;
+}
+
+.btn-outline-verde {
+  border: 2px solid var(--verde-principal);
+  color: var(--verde-principal);
+}
+
+.btn-outline-verde:hover {
+  background-color: var(--verde-principal);
+  color: white;
+}
+
+/* Títulos de seção */
+.section-title {
+  font-weight: 700;
+  color: var(--verde-principal);
+}
+
+/* Carrossel Home */
+.carousel-slide {
+  min-height: 88vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(34, 52, 40, 0.55);
+}
+
+.carousel-caption-custom {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.carousel-caption-custom h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+/* Icon boxes */
+.icon-box {
+  background-color: var(--verde-claro);
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Cards de categoria */
+.category-card {
+  background-color: var(--verde-claro);
+  transition: 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Cards de produto */
+.produto-card img {
+  height: 320px;
+  object-fit: cover;
+}
+
+.badge-eco {
+  background-color: #d8efe0;
+  color: var(--verde-principal);
+  font-weight: 600;
+}
+
+/* CTA */
+.cta-section {
+  background-color: var(--verde-principal);
+  color: white;
+  border-radius: 1.5rem;
+}
+
+/* Depoimentos */
+.testimonial-card {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Footer */
+.footer {
+  background-color: #1f2b22;
+  color: #dfe9e2;
+}
+
+.footer a {
+  color: #dfe9e2;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ffffff;
+}
+
+/* Backgrounds */
+.bg-areia {
+  background-color: var(--areia);
+}
+
+/* Filtros laterais - Categorias */
+.filter-section h6 {
+  color: var(--verde-principal);
+  font-weight: 700;
+}
+
+/* Breadcrumb */
+.breadcrumb-item a {
+  color: var(--verde-principal);
+  text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+/* Página de produto - galeria */
+.produto-detalhe-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.produto-thumb {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.produto-thumb:hover,
+.produto-thumb.active {
+  border-color: var(--verde-principal);
+}
+
+/* Newsletter */
+.newsletter-input {
+  border-radius: 50px;
+  padding-left: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .carousel-slide {
+    min-height: 70vh;
+  }
+
+  .carousel-caption-custom h1 {
+    font-size: 2rem;
+  }
+}
