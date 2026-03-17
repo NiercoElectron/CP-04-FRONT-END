@@ -6,8 +6,13 @@
   --texto: #243126;
 }
 
+@font-face {
+  font-family: varela;
+  src: url(../assets/fonts/VarelaRound-Regular.ttf);
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: varela;
   color: var(--texto);
   background-color: #ffffff;
 }
