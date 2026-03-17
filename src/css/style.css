@@ -7,12 +7,12 @@
 }
 
 @font-face {
-  font-family: varela;
-  src: url(../assets/fonts/VarelaRound-Regular.ttf);
+  font-family: Quicksand;
+  src: url(../assets/fonts/Quicksand-VariableFont_wght.ttf);
 }
 
 body {
-  font-family: varela;
+  font-family: Quicksand, sans-serif;
   color: var(--texto);
   background-color: #ffffff;
 }
